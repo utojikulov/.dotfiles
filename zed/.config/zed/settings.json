@@ -1,0 +1,122 @@
+{
+    "formatter": "prettier",
+    "remove_trailing_whitespace_on_save": false,
+    "show_wrap_guides": false,
+    "hard_tabs": false,
+    "minimap": {
+        "show": "never"
+    },
+    "git_panel": {
+        "dock": "right"
+    },
+    "icon_theme": "Colored Zed Icons Theme Dark",
+    "language_models": {
+        "deepseek": {
+            "api_url": "https://api.deepseek.com",
+            "available_models": [
+                {
+                    "name": "deepseek-chat",
+                    "display_name": "DeepSeek Chat",
+                    "max_tokens": 64000
+                },
+                {
+                    "name": "deepseek-reasoner",
+                    "display_name": "DeepSeek Reasoner",
+                    "max_tokens": 64000,
+                    "max_output_tokens": 4096
+                }
+            ]
+        }
+    },
+    "agent": {
+        "default_profile": "write",
+        "default_model": {
+            "provider": "openai",
+            "model": "gpt-4"
+        },
+        "model_parameters": []
+    },
+    "show_edit_predictions": false,
+    "languages": {
+        "TypeScript": {
+            "show_edit_predictions": false
+        }
+    },
+
+    "autosave": "on_window_change",
+    "soft_wrap": "none",
+    "vim_mode": true,
+    "relative_line_numbers": "enabled",
+    "ui_font_size": 15,
+    "buffer_font_size": 14,
+    "theme": {
+        "mode": "dark",
+        "light": "Rosé Pine Dawn",
+        "dark": "Github Dark"
+    },
+    "experimental.theme_overrides": {
+        "background.appearance": "blurred"
+    },
+    "terminal": {
+        "dock": "right",
+        "font_size": 13,
+        "font_family": "JetBrainsMono Nerd Font"
+    },
+    "tab_bar": {
+        "show": true
+    },
+    "scrollbar": {
+        "show": "never"
+    },
+    "file_scan_exclusions": [
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/Thumbs.db",
+        "**/.classpath",
+        "**/.settings"
+        // above is default from Zed
+        // "**/out",
+        // "**/dist",
+        // "**/.next",
+        // "**/.storybook",
+        // "**/.tap",
+        // "**/report",
+        // "**/node_modules"
+    ],
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "project_panel": {
+        "button": true,
+        "dock": "right",
+        "git_status": true
+    },
+    "outline_panel": {
+        "dock": "right"
+    },
+    "collaboration_panel": {
+        "dock": "left"
+    },
+    // Move some unnecessary panels to the left
+    "notification_panel": {
+        "dock": "left"
+    },
+    "tab_size": 4,
+    "chat_panel": {
+        "dock": "left"
+    },
+    "vertical_scroll_margin": 10,
+    "vim": {
+        "cursor_shape": {
+            "normal": "block",
+            "replace": "underline",
+            "visual": "block",
+            "insert": "block"
+        },
+        "highlight_on_yank_duration": 130
+    }
+}

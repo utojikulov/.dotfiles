@@ -1,0 +1,35 @@
+[
+   {
+      "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+      "bindings": {
+         ";": "command_palette::Toggle",
+         "space p f": "file_finder::Toggle",
+         "space g s": "git_panel::ToggleFocus",
+         "space h": "terminal_panel::ToggleFocus",
+         // Chat with AI
+         "space a c": "agent::ToggleFocus",
+
+         "shift-j": "editor::MoveLineDown",
+         "shift-k": "editor::MoveLineUp"
+      }
+   },
+   {
+      "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+      "bindings": {
+         // + Buffer
+         // Switch between buffers
+         "shift-h": "pane::ActivatePreviousItem",
+         "shift-l": "pane::ActivateNextItem",
+         // Close active panel
+         "space x": "pane::CloseActiveItem",
+         // Show project panel with current file
+         "space e": "pane::RevealInProjectPanel"
+      }
+   },
+   {
+     "context": "Workspace",
+     "bindings": {
+       "cmd-shift-e": null
+     }
+   }
+]
