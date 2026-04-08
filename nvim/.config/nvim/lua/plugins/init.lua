@@ -49,6 +49,7 @@ return {
                 "css-lsp",
                 "prettier",
                 "eslint-lsp",
+                "eslint_d",
                 "gopls",
                 "js-debug-adapter",
                 "typescript-language-server",

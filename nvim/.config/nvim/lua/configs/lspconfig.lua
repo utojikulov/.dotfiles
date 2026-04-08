@@ -10,20 +10,13 @@ vim.lsp.config("ts_ls", {
             disableSuggestions = true,
         }
     },
-    commands = {
-        OrganizeImports = {
-            organize_imports,
-            description = "Organize Imports",
-        },
-    },
 })
 vim.lsp.enable("ts_ls")
 -- read :h vim.lsp.config for changing options of lsp servers 
 
-vim.o.updatetime = 1500
+vim.o.updatetime = 1200
 vim.api.nvim_create_autocmd("CursorHold", {
     callback = function()
         vim.diagnostic.open_float(nil, { focus = false })
     end,
 })
-
