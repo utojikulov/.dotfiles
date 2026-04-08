@@ -12,6 +12,10 @@ return {
         lazy = false,
     },
     {
+        "nvim-lua/plenary.nvim",
+        lazy = false,
+    },
+    {
         "OXY2DEV/markview.nvim",
         lazy = false,
 
@@ -54,6 +58,8 @@ return {
 
     {
         "nvim-treesitter/nvim-treesitter",
+        lazy = false,
+        build = ':TSUpdate',
         opts = {
             ensure_installed = {
                 "vim",
@@ -81,14 +87,6 @@ return {
         event = "VeryLazy",
         config = function()
             require "configs.lint"
-        end,
-    },
-
-    {
-        "windwp/nvim-ts-autotag",
-        event = "VeryLazy",
-        config = function()
-            require("nvim-ts-autotag").setup()
         end,
     },
 }
