@@ -23,6 +23,9 @@ require("lazy").setup({
   },
 
   { import = "plugins" },
+  rocks = {
+      hererocks = true,
+  }
 }, lazy_config)
 
 -- load theme

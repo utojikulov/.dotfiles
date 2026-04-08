@@ -1,3 +1,5 @@
+require "nvchad.mappings"
+
 local harpoon = require "harpoon"
 local map = vim.keymap.set
 
@@ -25,6 +27,7 @@ map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" }
 
 -- global lsp mappings
 map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP diagnostic loclist" })
+map("n", "K", vim.lsp.buf.hover, { desc = "LSP hover" })
 
 map("n", "<S-l>", function()
   require("nvchad.tabufline").next()
