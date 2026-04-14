@@ -80,7 +80,7 @@ set textwidth=80
 set mousehide
 
 " Set colorscheme.
-colorscheme molokai
+colorscheme codedark
 
 " Greatly enhance command line tab completion.
 set wildmenu
@@ -112,7 +112,7 @@ let mapleader = "\\"
 let maplocalleader = "\\"
 
 " Map <F3> key to open and close Nerdtree.
-nnoremap <F3> :NERDTreeToggle ~/bin<cr>
+nnoremap <C-n> :NERDTreeToggle ~/bin<cr>
 
 " Have Nerdtree ignore certain files.
 let NERDTreeIgnore=['\.jpg$', '\.mp4$', '\.zip$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.tar$', '\.gz$', '\.xz$', '\.bz2$', '\.tz$', '\.db$', '\.exe$', '\.odt$', '\xlsx$', '\docx$', '\.tar$', '\.rar$', '\.img$', '\.odt$', '\.m4a$', '\.bmp$', '\.ogg$', '\.mp3$', '\.gzip$', '\.flv$', '\.deb$', '\.rpm$']
