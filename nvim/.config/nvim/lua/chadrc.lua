@@ -2,7 +2,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "vscode_dark",
+  theme = "github_dark",
   transparency = false,
   telescope = { style = "borderless" },
   statusline = {
